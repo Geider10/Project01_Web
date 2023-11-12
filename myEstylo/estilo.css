@@ -217,3 +217,81 @@ nav ul .enlace1:hover{
     text-transform: uppercase;
     display: inline-block;
 }
+.topFoot{
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contactFoot{
+    border-top: 1px solid #1c1c1c;
+    border-bottom: 1px solid #1c1c1c;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+.contactFoot h3{
+    margin-bottom: 20px;
+}
+.contactFoot a{
+    text-decoration: none;
+    color: #0a0a0a;
+    display: block;
+    margin-bottom: 10px;
+}
+.dark{
+    background-color: #0a0a0a;
+}
+.dark h3, .dark a, .dark label{
+    color: #bbbbbb;
+}
+
+.bootonFoot{
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+.networks{
+    width: 25%;
+
+}
+.networks a{
+    display: inline-block;
+    text-decoration: none;
+    color: #0a0a0a;
+    font-size: 20px;
+    padding: 20px 0;
+    margin-left: 10px;
+    transition: transform 500ms ease;
+}
+.networks a:hover{
+    transform: scale(1.3);
+}
+.bootonFoot p{
+    width: 75%;
+    background-color: #f8f834;
+    padding: 20px 0;
+    border: 1px solid #1c1c1c;
+}
+.bootonFoot p a{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #1c1c1c;
+}
+.bootonFoot p a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1c1c1c;
+    transform: scale(1);
+    transform-origin: bottom left;
+    transition: transform 500ms ease;
+}
+.bootonFoot p a:hover::after{
+    transform: scale(0);
+    transform-origin: bottom left;
+}
