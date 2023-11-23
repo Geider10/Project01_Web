@@ -1,0 +1,107 @@
+
+@media (max-width:500px){
+    /*header*/
+    .open, .close{
+        display: block;
+    }
+    nav{
+        background-color: $colorTerciario;
+        border: 1px solid;
+        padding: 10px;
+    }
+    nav h1{
+        border: 0;
+        padding: 0;
+    }
+    nav ul{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 20px;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right:0;
+        bottom: 0;
+        background-color:#ececec;
+        padding: 1rem 3rem;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+      
+    }
+    nav ul a{
+        border: 0;
+        padding: 0;
+    }
+    nav ul .enlace1:hover{
+        background: none;
+        color:$colorPrimario;
+    }
+    ul.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .topFoot{
+        flex-direction: column;
+        
+    }
+    .contactFoot{
+        text-align: start;
+        padding-left: 30px;
+    }
+    .bootonFoot{
+        flex-direction: column;
+    }
+    .bootonFoot .networks{
+        width: 100%;
+        border-bottom: 1px solid;
+    }
+    .networks a{
+        margin-left: 25px;
+    }
+    .bootonFoot p{
+        width: 100%;
+        border-right: 0;
+        border-bottom: 1px solid black;
+    }
+    /*INDEX*/
+    .selloTienda{
+        display: grid;
+        grid-template-columns:repeat(1,minmax(200px,1fr));
+        grid-template-rows:repeat(3,200px);
+        row-gap:20px;
+    }
+    .card1{
+        width: 100%;
+        height: 100%;
+    }
+    .card1 img{
+        width: 100%;
+        height: 100%;
+    }
+    .collecionTienda{
+        grid-template-columns: repeat(2,200px);
+        justify-items: center;
+        gap: 20px;
+    }
+    .card2{
+        width: 200px;
+    }
+    .offerTienda
+    {
+        flex-direction: column;
+    }
+    .contentOffer{
+        width: 100%;
+        height: 300px;
+    }
+    .offerTienda img{
+        width: 100%;
+        height: 400px;
+    }
+    .buyTienda{
+        font-size:25px;
+    }
+}

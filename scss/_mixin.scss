@@ -1,0 +1,5 @@
+@mixin anclas($colorAncla){
+    text-decoration: none;
+    display: inline-block;
+    color: $colorAncla;
+}

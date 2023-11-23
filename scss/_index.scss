@@ -1,0 +1,200 @@
+.esloganTienda {
+    text-align: center;
+
+    h2 {
+        font-weight: 900;
+        font-size: 50px;
+        margin-top: 20px;
+    }
+
+    p {
+        display: inline-block;
+        padding: 5px 50px;
+        background-color: $colorTerciario;
+        color: $colorCuarto;
+    }
+}
+
+.selloTienda {
+    height: auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.card1 {
+    height: 500px;
+    position: relative;
+    display: block;
+    color: $colorPrimario;
+    font-size: 20px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.sombreadoSello {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(230, 230, 230, 0.8), rgba(30, 30, 30, 0.8), rgba(236, 240, 1, 0.842));
+    opacity: 0.1;
+    transition: all 300ms ease;
+
+    &:hover {
+        opacity: 0.4;
+    }
+}
+
+.card1 {
+    &:nth-child(1):hover::after {
+        content: 'Mujer';
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        padding-bottom: 20px;
+    }
+
+    &:nth-child(2):hover::after {
+        content: 'Ropa';
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        padding-bottom: 20px;
+    }
+
+    &:nth-child(3):hover::after {
+        content: 'Hombre';
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        padding-bottom: 20px;
+    }
+}
+
+.productsTienda {
+    height: auto;
+    text-align: center;
+
+    h2 {
+        font-size: 35px;
+        font-weight: 500px;
+        margin-top: 40px;
+    }
+}
+
+.collecionTienda {
+    // background-color: beige;
+    display: grid;
+    grid-template-columns: repeat(4,minmax(200px,300px));
+    justify-items:center;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.card2 {
+    // width: 250px;
+    height: auto;
+    background-color: #bbbbbb;
+}
+
+.imgCard2 {
+    display: block;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        transition: transform 300ms ease;
+    }
+
+    label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        padding: 5px 10px;
+        color: $colorTerciario;
+        background-color: $colorPrimario;
+    }
+
+    img:hover {
+        transform: scale(1.2);
+    }
+}
+
+.card2 label {
+    display: block;
+    margin-top: 8px;
+    text-align: start;
+}
+
+.btnTienda {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 25px;
+    color:$colorTerciario;
+    background:$colorPrimario;
+    margin: 30px 0;
+    transition: all 300ms ease;
+
+    &:hover {
+        color: #1c1c1c;
+        background-color: $colorTerciario;
+        border: 1px solid $colorPrimario;
+    }
+}
+
+.offerTienda {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contentOffer {
+    width: 60%;
+    height: 600px;
+    background-image: linear-gradient(rgba(230, 230, 230, 0.8), rgba(236, 240, 1, 0.842));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+
+    label {
+        display: inline-block;
+        font-size: 30px;
+        letter-spacing: 1px;
+
+        &:nth-child(3) {
+            font-size: 60px;
+            font-weight: 900;
+        }
+    }
+}
+
+.offerTienda img {
+    width: 40%;
+    height: 600px;
+}
+
+.buyTienda {
+    padding: 40px 0;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 900;
+
+    a {
+        color: $colorPrimario;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+}
