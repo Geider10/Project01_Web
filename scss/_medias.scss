@@ -42,7 +42,7 @@
         opacity: 1;
         visibility: visible;
     }
-
+    /*FOOTER*/
     .topFoot{
         flex-direction: column;
         
@@ -81,13 +81,10 @@
         width: 100%;
         height: 100%;
     }
-    .collecionTienda{
+    .collecionOne{
         grid-template-columns: repeat(2,200px);
         justify-items: center;
         gap: 20px;
-    }
-    .card2{
-        width: 200px;
     }
     .offerTienda
     {
@@ -103,5 +100,19 @@
     }
     .buyTienda{
         font-size:25px;
+    }
+    /*NUEVO*/
+    .nuevoSection{
+        padding: 50px 30px;
+    }
+    .nuevoSection p{
+        font-size:40px;
+    }
+    .collecionTwo{
+        display: grid;
+        grid-template-columns: 300px;
+    }
+    .card2{
+        width: 100%;
     }
 }
