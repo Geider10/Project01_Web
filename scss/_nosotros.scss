@@ -1,0 +1,91 @@
+.acercaDe{
+    @include dimensionBoxNosotros(grid);
+    grid-template-areas:
+     "titulo titulo"
+     "nosotros modelo"
+    ;
+    grid-template-columns: repeat(2, 1fr);
+    h2{
+        @include h2Nosotros(titulo);
+    }
+    .txtAcerca{
+        grid-area:nosotros;
+        h3{
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+        p{
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+    }
+    .imgAcerca{
+        grid-area:modelo;
+        height: 600px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.suscribite{
+    @include dimensionBoxNosotros(grid);
+    grid-template-areas: 
+    "titulo titulo"
+    "imgSub formSub"
+    ;
+    grid-template-columns:repeat(2,1fr);
+
+    h2{
+        @include h2Nosotros(titulo);
+    }
+    .imgSub{
+        grid-area:imgSub;
+        height: 400px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+    .formSub{
+        background-color: aquamarine;
+        border-radius:10px;
+        grid-area: formSub;
+        padding: 80px 60px;
+        label{
+            display: block;
+            font-size: 20px;
+        }
+        .inpot{
+            display: block;
+            width: 100%;
+            margin-bottom: 5px;
+            padding: 10px;
+            font-size: 15px;
+            border: none;
+            transition:all 0.3s ;
+        }
+        .inpot:hover{
+            background-color: transparent;
+            border: 1px solid;
+        }
+        .btnSubmit{
+            padding: 10px;
+            font-size: 15px;
+            border-radius: 10px;
+            background-color: transparent;
+            margin-top: 5px;
+            transition:all 0.3s ;
+            &:hover{
+                color: $colorSecundario;
+                background-color: $colorPrimario;
+                border: none;
+                cursor: pointer;
+            }
+        }
+
+    }
+}

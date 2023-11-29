@@ -351,6 +351,100 @@ nav ul .enlace1:hover {
   font-weight: 900;
 }
 
+.acercaDe {
+  width: 100%;
+  padding: 50px 30px;
+  display: grid;
+  grid-template-areas: "titulo titulo" "nosotros modelo";
+  grid-template-columns: repeat(2, 1fr);
+}
+.acercaDe h2 {
+  grid-area: titulo;
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 55px;
+}
+.acercaDe .txtAcerca {
+  grid-area: nosotros;
+}
+.acercaDe .txtAcerca h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+.acercaDe .txtAcerca p {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.acercaDe .imgAcerca {
+  grid-area: modelo;
+  height: 600px;
+}
+.acercaDe .imgAcerca img {
+  width: 100%;
+  height: 100%;
+}
+
+.suscribite {
+  width: 100%;
+  padding: 50px 30px;
+  display: grid;
+  grid-template-areas: "titulo titulo" "imgSub formSub";
+  grid-template-columns: repeat(2, 1fr);
+}
+.suscribite h2 {
+  grid-area: titulo;
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 55px;
+}
+.suscribite .imgSub {
+  grid-area: imgSub;
+  height: 400px;
+}
+.suscribite .imgSub img {
+  width: 100%;
+  height: 100%;
+}
+.suscribite .formSub {
+  background-color: aquamarine;
+  border-radius: 10px;
+  grid-area: formSub;
+  padding: 80px 60px;
+}
+.suscribite .formSub label {
+  display: block;
+  font-size: 20px;
+}
+.suscribite .formSub .inpot {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  transition: all 0.3s;
+}
+.suscribite .formSub .inpot:hover {
+  background-color: transparent;
+  border: 1px solid;
+}
+.suscribite .formSub .btnSubmit {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: transparent;
+  margin-top: 5px;
+  transition: all 0.3s;
+}
+.suscribite .formSub .btnSubmit:hover {
+  color: #fafafa;
+  background-color: #1c1c1c;
+  border: none;
+  cursor: pointer;
+}
+
 @media (max-width: 500px) {
   /*header*/
   .open, .close {
@@ -463,6 +557,36 @@ nav ul .enlace1:hover {
   }
   .card2 {
     width: 100%;
+  }
+  /*nosotros*/
+  .acercaDe {
+    grid-template-areas: "titulo" "nosotros" "modelo";
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .acercaDe h2 {
+    font-size: 40px;
+  }
+  .acercaDe .txtAcerca p {
+    font-size: 16px;
+  }
+  .acercaDe .imgAcerca {
+    height: 300px;
+  }
+  .suscribite {
+    padding: 20px;
+    grid-template-areas: "titulo" "imgSub" "formSub";
+    grid-template-columns: 1fr;
+  }
+  .suscribite .imgSub {
+    display: none;
+  }
+  .suscribite .formSub {
+    padding: 40px;
+  }
+  .suscribite .btnSubmit {
+    color: #1c1c1c;
+    cursor: pointer;
   }
 }
 

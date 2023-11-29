@@ -115,4 +115,42 @@
     .card2{
         width: 100%;
     }
+    /*nosotros*/
+    .acercaDe{
+        grid-template-areas:
+        "titulo"
+        "nosotros"
+        "modelo"
+        ;
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .acercaDe h2{
+        font-size: 40px;
+    }
+    .acercaDe .txtAcerca p{
+        font-size: 16px;
+    }
+    .acercaDe .imgAcerca{
+        height: 300px;
+    }
+    .suscribite{
+        padding: 20px;
+        grid-template-areas:
+        "titulo"
+        "imgSub"
+        "formSub"
+        ;
+        grid-template-columns:1fr;
+    }
+    .suscribite .imgSub{
+        display: none;
+    }
+    .suscribite .formSub{
+        padding: 40px;
+    }
+    .suscribite .btnSubmit{
+        color: $colorPrimario;
+        cursor: pointer;
+    }
 }
