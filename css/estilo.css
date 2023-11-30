@@ -445,6 +445,98 @@ nav ul .enlace1:hover {
   cursor: pointer;
 }
 
+.faq {
+  width: 100%;
+  padding: 30px 0;
+}
+.faq h2 {
+  font-size: 55PX;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.faq .questionFaq {
+  padding: 0 200px;
+  text-align: center;
+}
+.faq .questionFaq h3 {
+  font-weight: normal;
+  font-size: 30px;
+}
+.faq .questionFaq p {
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.pago {
+  width: 100%;
+  padding: 30px 0;
+}
+.pago h2 {
+  font-size: 55PX;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.pago .formaPago {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.pago .formaPago .cardBase h3 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.cardPago {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  /*face*/
+  /*back*/
+}
+.cardPago .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.cardPago .font {
+  transform: perspective(600px) rotateY(0deg); /*indicar su posicion*/
+  box-shadow: 0 5px 10px #000;
+}
+.cardPago .font img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.cardPago .back {
+  transform: perspective(600px) rotateY(180deg);
+  background-color: rgb(3, 35, 54);
+  padding: 15px;
+  color: #fafafa;
+  text-align: start;
+  box-shadow: 0px 5px 10px #000;
+  transition: all 0.5s ease-in-out;
+}
+.cardPago .back label {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.cardPago:hover .font {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.cardPago:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
 @media (max-width: 500px) {
   /*header*/
   .open, .close {
@@ -587,6 +679,42 @@ nav ul .enlace1:hover {
   .suscribite .btnSubmit {
     color: #1c1c1c;
     cursor: pointer;
+  }
+  .faq {
+    padding: 20px 0;
+  }
+  .faq h2 {
+    font-size: 40px;
+  }
+  .faq .questionFaq {
+    padding: 0 30px;
+  }
+  .pago {
+    padding: 20px 0;
+  }
+  .pago h2 {
+    font-size: 40px;
+  }
+  .pago .formaPago {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .cardPago .font {
+    transform: rotate(0);
+    box-shadow: 0 0 0 0;
+    z-index: 1;
+    border: 1px solid;
+  }
+  .cardPago .back {
+    box-shadow: 0 0 0 0;
+    transform: rotate(0);
+    z-index: 2;
+    background-color: transparent;
+    color: #1c1c1c;
+  }
+  .cardPago:hover .font {
+    transform: perspective(0) rotateY(0);
   }
 }
 

@@ -153,4 +153,43 @@
         color: $colorPrimario;
         cursor: pointer;
     }
+
+    //condicion
+    .faq{
+        padding: 20px 0;
+    }
+    .faq h2{
+        font-size: 40px;
+    }
+    .faq .questionFaq{
+        padding: 0 30px;
+    }
+    .pago{
+        padding: 20px 0;
+    }
+    .pago h2{
+        font-size: 40px;
+    }
+    .pago .formaPago{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .cardPago .font{
+        transform:rotate(0);
+        box-shadow: 0 0 0 0;
+        z-index: 1;
+        border: 1px solid;
+    }
+    .cardPago .back{
+        box-shadow: 0 0 0 0;
+        transform: rotate(0);
+        z-index: 2;
+        background-color: transparent;
+        color: $colorPrimario;
+    }
+    .cardPago:hover .font{
+        transform: perspective(0) rotateY(0);
+    }
 }
