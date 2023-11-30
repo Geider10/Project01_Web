@@ -408,7 +408,7 @@ nav ul .enlace1:hover {
   height: 100%;
 }
 .suscribite .formSub {
-  background-color: aquamarine;
+  background-color: rgba(24, 102, 175, 0.8);
   border-radius: 10px;
   grid-area: formSub;
   padding: 80px 60px;
@@ -447,7 +447,7 @@ nav ul .enlace1:hover {
 
 .faq {
   width: 100%;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 .faq h2 {
   font-size: 55PX;
@@ -469,7 +469,7 @@ nav ul .enlace1:hover {
 
 .pago {
   width: 100%;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 .pago h2 {
   font-size: 55PX;
