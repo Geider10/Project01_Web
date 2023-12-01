@@ -162,3 +162,30 @@ nav {
     font-size: 20px;
     cursor: pointer;
 }
+.wassap {
+    position: fixed;
+    z-index: 3;
+    bottom: 60px;
+    right: 30px;
+    border-radius: 50%;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    .btnWass {
+        width: 60px;
+    }
+}
+
+@keyframes efecto {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}
