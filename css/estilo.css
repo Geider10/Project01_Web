@@ -161,7 +161,7 @@ nav ul .enlace1:hover {
 }
 .esloganTienda h2 {
   font-weight: 900;
-  font-size: 50px;
+  font-size: 55px;
   margin-top: 20px;
 }
 .esloganTienda p {
@@ -169,6 +169,7 @@ nav ul .enlace1:hover {
   padding: 5px 50px;
   background-color: #f8f834;
   color: #636363;
+  font-size: 20px;
 }
 
 .selloTienda {
@@ -249,7 +250,19 @@ nav ul .enlace1:hover {
 
 .card2 {
   height: auto;
-  background-color: #bbbbbb;
+  padding: 5px;
+  box-shadow: 0px 5px 10px rgba(30, 30, 30, 0.8);
+  position: relative;
+}
+.card2 .masVendido {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  padding: 5px 10px;
+  color: #f8f834;
+  background-color: #1c1c1c;
+  z-index: 1;
 }
 
 .imgCard2 {
@@ -264,22 +277,13 @@ nav ul .enlace1:hover {
   height: 100%;
   transition: transform 300ms ease;
 }
-.imgCard2 label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  padding: 5px 10px;
-  color: #f8f834;
-  background-color: #1c1c1c;
-}
 .imgCard2 img:hover {
   transform: scale(1.2);
 }
 
 .card2 label {
   display: block;
-  margin-top: 8px;
+  margin-bottom: 5px;
   text-align: start;
 }
 
@@ -315,12 +319,16 @@ nav ul .enlace1:hover {
 }
 .contentOffer label {
   display: inline-block;
-  font-size: 30px;
+  font-size: 40px;
   letter-spacing: 1px;
+  /*tercer elemento de la caja CONTENTOFFER*/
 }
 .contentOffer label:nth-child(3) {
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 900;
+}
+.contentOffer p {
+  font-size: 20px;
 }
 
 .offerTienda img {
@@ -338,6 +346,25 @@ nav ul .enlace1:hover {
   color: #1c1c1c;
   text-transform: uppercase;
   display: inline-block;
+}
+
+.serviciosDestacado {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.serviciosDestacado .servicio {
+  background-color: #fafafa;
+  padding: 20px;
+  box-shadow: 0px 5px 10px rgba(30, 30, 30, 0.8);
+}
+.serviciosDestacado .servicio label {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 5px;
 }
 
 .nuevoSection {
@@ -635,6 +662,9 @@ nav ul .enlace1:hover {
   }
   .buyTienda {
     font-size: 25px;
+  }
+  .serviciosDestacado {
+    flex-wrap: wrap;
   }
   /*NUEVO*/
   .nuevoSection {
