@@ -304,7 +304,6 @@ nav ul .enlace1:hover {
 
 .offerTienda {
   display: flex;
-  justify-content: space-around;
 }
 
 .contentOffer {
@@ -734,7 +733,7 @@ nav ul .enlace1:hover {
     transform: rotate(0);
     box-shadow: 0 0 0 0;
     z-index: 1;
-    border: 1px solid;
+    box-shadow: 0 5px 10px rgba(30, 30, 30, 0.8);
   }
   .cardPago .back {
     box-shadow: 0 0 0 0;
