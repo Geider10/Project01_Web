@@ -1,3 +1,45 @@
+@media (max-width:1023px){
+    /*index*/
+    .selloTienda{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .extra{
+        display: none;
+    }
+    .collecionTienda{
+        display: grid; 
+        grid-template-columns: repeat(auto-fit,300px);
+        gap: 30px;
+    }
+    .serviciosDestacado{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,200px);
+    }
+    .offerTienda .contentOffer, .offerTienda img{
+        width: 50%;
+    }
+    /*nosotros*/
+    .suscribite .imgSub{
+        height: 300px;
+    }
+    .suscribite .formSub{
+        height: 300px;
+        padding: 25px;
+    }
+    /*condiciones*/
+    .faq, .pago{
+        padding: 30px 0;
+    }
+   
+    .faq .questionFaq{
+        padding: 0 80px;
+    }
+    .pago .formaPago{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
 
 @media (max-width:500px){
     /*header*/
@@ -139,7 +181,7 @@
         font-size: 16px;
     }
     .acercaDe .imgAcerca{
-        height: 300px;
+        display: none;
     }
     .suscribite{
         padding: 20px;
@@ -149,12 +191,7 @@
         "formSub"
         ;
         grid-template-columns:1fr;
-    }
-    .suscribite .imgSub{
-        display: none;
-    }
-    .suscribite .formSub{
-        padding: 40px;
+        gap: 20px;
     }
     .suscribite .btnSubmit{
         color: $colorPrimario;
@@ -180,7 +217,6 @@
     .pago .formaPago{
         display: flex;
         flex-direction: column;
-        gap: 30px;
     }
 
     .cardPago .font{

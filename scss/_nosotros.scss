@@ -4,7 +4,6 @@
      "titulo titulo"
      "nosotros modelo"
     ;
-    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     h2{
         @include h2Nosotros(titulo);
