@@ -411,7 +411,7 @@ nav ul .enlace1:hover {
 .acercaDe h2 {
   grid-area: titulo;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   font-size: 55px;
 }
 .acercaDe .txtAcerca {
@@ -446,7 +446,7 @@ nav ul .enlace1:hover {
 .suscribite h2 {
   grid-area: titulo;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   font-size: 55px;
 }
 .suscribite .imgSub {
@@ -686,6 +686,7 @@ nav ul .enlace1:hover {
   .bootonFoot .networks {
     width: 100%;
     border-bottom: 1px solid;
+    background-color: #f8f834;
   }
   .networks a {
     margin-left: 25px;
@@ -694,12 +695,18 @@ nav ul .enlace1:hover {
     width: 100%;
     border-right: 0;
     border-bottom: 1px solid black;
+    background-color: #1c1c1c;
+    color: #fafafa;
+  }
+  .bootonFoot p a {
+    color: #fafafa;
+    border-bottom: 2px solid #fafafa;
   }
   /*INDEX*/
   .selloTienda {
     display: grid;
     grid-template-columns: repeat(1, minmax(200px, 1fr));
-    grid-template-rows: repeat(3, 200px);
+    grid-template-rows: repeat(2, 200px);
     row-gap: 20px;
     padding: 0 20px;
   }
@@ -719,16 +726,16 @@ nav ul .enlace1:hover {
     justify-items: center;
     gap: 20px;
   }
+  .btnTienda {
+    display: none;
+  }
   .offerTienda {
+    width: 100%;
     flex-direction: column;
   }
-  .contentOffer {
+  .offerTienda .contentOffer, .offerTienda img {
     width: 100%;
     height: 300px;
-  }
-  .offerTienda img {
-    width: 100%;
-    height: 400px;
   }
   .buyTienda {
     font-size: 25px;
@@ -754,10 +761,11 @@ nav ul .enlace1:hover {
   .acercaDe {
     grid-template-areas: "titulo" "nosotros" "modelo";
     grid-template-columns: 1fr;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
   }
   .acercaDe h2 {
     font-size: 40px;
+    padding: 0;
   }
   .acercaDe .txtAcerca p {
     font-size: 16px;
@@ -766,13 +774,15 @@ nav ul .enlace1:hover {
     display: none;
   }
   .suscribite {
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
     grid-template-areas: "titulo" "imgSub" "formSub";
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  .suscribite .btnSubmit {
-    color: #1c1c1c;
+  .suscribite .formSub .btnSubmit {
+    color: #fafafa;
+    border: none;
+    background-color: black;
     cursor: pointer;
   }
   .faq {

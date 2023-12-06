@@ -6,7 +6,7 @@
 @mixin h2Nosotros($gridAreaName){
     grid-area: $gridAreaName;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     font-size: 55px;
 }
 @mixin dimensionBoxNosotros($display){
