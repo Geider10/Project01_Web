@@ -147,9 +147,15 @@
         width: 100%;
         flex-direction: column;
     }
-    .offerTienda .contentOffer, .offerTienda img{
+    .offerTienda .contentOffer{
         width: 100%;
         height: 300px;
+    }
+    .contentOffer p{
+        font-size: 22px;
+    }
+    .offerTienda img{
+        display: none;
     }
     .buyTienda{
         font-size:25px;

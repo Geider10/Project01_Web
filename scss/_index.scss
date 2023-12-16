@@ -134,7 +134,7 @@
     }
 }
 
-.card2 label {
+.card2 p {
     display: block;
     margin-bottom: 5px;
     text-align: start;
@@ -169,18 +169,15 @@
     text-align: center;
     gap: 25px;
 
-    label {
+    p {
         display: inline-block;
-        font-size: 40px;
+        font-size: 30px;
         letter-spacing: 1px;
         /*tercer elemento de la caja CONTENTOFFER*/
         &:nth-child(3) {
             font-size: 70px;
             font-weight: 900;
         }
-    }
-    p{
-        font-size: 20px;
     }
 }
 
@@ -211,8 +208,7 @@
         background-color: $colorSecundario;
         padding: 20px;
         box-shadow: 0px 5px 10px rgba(30, 30, 30, 0.8);
-        label{
-            display: block;
+        p{
             text-align: center;
             font-weight: bold;
             margin-top: 5px;

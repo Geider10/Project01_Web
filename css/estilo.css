@@ -82,16 +82,18 @@ nav ul .enlace1:hover {
   display: inline-block;
   color: #636363;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .dark {
   background-color: #1c1c1c;
 }
-.dark h3,
-.dark a,
-.dark label {
+.dark h3 {
   color: #fafafa;
+}
+.dark p {
+  color: #fafafa;
+  margin-bottom: 20px;
 }
 
 .bootonFoot {
@@ -305,7 +307,7 @@ nav ul .enlace1:hover {
   transform: scale(1.2);
 }
 
-.card2 label {
+.card2 p {
   display: block;
   margin-bottom: 5px;
   text-align: start;
@@ -340,18 +342,15 @@ nav ul .enlace1:hover {
   text-align: center;
   gap: 25px;
 }
-.contentOffer label {
+.contentOffer p {
   display: inline-block;
-  font-size: 40px;
+  font-size: 30px;
   letter-spacing: 1px;
   /*tercer elemento de la caja CONTENTOFFER*/
 }
-.contentOffer label:nth-child(3) {
+.contentOffer p:nth-child(3) {
   font-size: 70px;
   font-weight: 900;
-}
-.contentOffer p {
-  font-size: 20px;
 }
 
 .offerTienda img {
@@ -383,8 +382,7 @@ nav ul .enlace1:hover {
   padding: 20px;
   box-shadow: 0px 5px 10px rgba(30, 30, 30, 0.8);
 }
-.serviciosDestacado .servicio label {
-  display: block;
+.serviciosDestacado .servicio p {
   text-align: center;
   font-weight: bold;
   margin-top: 5px;
@@ -574,12 +572,6 @@ nav ul .enlace1:hover {
   box-shadow: 0px 5px 10px #000;
   transition: all 0.5s ease-in-out;
 }
-.cardPago .back label {
-  display: inline-block;
-  font-weight: bold;
-  font-size: 20px;
-  margin-bottom: 5px;
-}
 
 .cardPago:hover .font {
   transform: perspective(600px) rotateY(180deg);
@@ -733,9 +725,15 @@ nav ul .enlace1:hover {
     width: 100%;
     flex-direction: column;
   }
-  .offerTienda .contentOffer, .offerTienda img {
+  .offerTienda .contentOffer {
     width: 100%;
     height: 300px;
+  }
+  .contentOffer p {
+    font-size: 22px;
+  }
+  .offerTienda img {
+    display: none;
   }
   .buyTienda {
     font-size: 25px;
